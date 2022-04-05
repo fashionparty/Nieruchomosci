@@ -10,4 +10,24 @@
     <string name="zaloguj">Zaloguj</string>
     <string name="apator_copyrights">© Apator Rector 2022</string>
     <string name="remember_validation">Zapamiętaj dane logowania</string>
+    <string name="settlement">Settlement</string>
+    <string name="rozliczenia">Rozliczenia</string>
+    <string name="komunikaty">Komunikaty</string>
+    <string name="g_osowania">Głosowania</string>
+    <string name="usterki">Usterki</string>
+    <string name="wi_cej">Więcej</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="zielona_g_ra_jerzego_waszczyka_9b">ZIELONA GÓRA, JERZEGO WASZCZYKA 9B</string>
+    <string name="wprowad_tekst">Wprowadź tekst</string>
+    <string name="_406_20_pln">-406,20 PLN</string>
+    <string name="saldo">Saldo</string>
+    <string name="wiadomo_ci">Wiadomości</string>
+    <string name="powiadomienia">Powiadomienia</string>
+    <string name="avatar">avatar</string>
+    <string name="termin_p_atno_ci">Termin płatności</string>
+    <string name="naliczenie">Naliczenie</string>
+    <string name="wp_ata">Wpłata</string>
+    <string name="do_zap_aty">Do zapłaty</string>
+    <string name="status_rozliczenia">Status rozliczenia</string>
 </resources>

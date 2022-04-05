@@ -3,23 +3,35 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@+id/navigation_settlements">
 
     <fragment
-        android:id="@+id/navigation_home"
-        android:name="com.example.nieruchomosci.ui.home.HomeFragment"
-        android:label="@string/title_home"
+        android:id="@+id/navigation_settlements"
+        android:name="com.example.nieruchomosci.ui.settlements.SettlementsFragment"
+        android:label="@string/rozliczenia"
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.example.nieruchomosci.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        android:id="@+id/navigation_messages"
+        android:name="com.example.nieruchomosci.ui.notifications.NotificationsFragment"
+        android:label="@string/komunikaty"
+        tools:layout="@layout/fragment_settlements" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
+        android:id="@+id/navigation_voting"
         android:name="com.example.nieruchomosci.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
+        android:label="@string/g_osowania"
+        tools:layout="@layout/fragment_notifications" />
+
+    <fragment
+        android:id="@+id/navigation_faults"
+        android:name="com.example.nieruchomosci.ui.notifications.NotificationsFragment"
+        android:label="@string/usterki"
+        tools:layout="@layout/fragment_notifications" />
+
+    <fragment
+        android:id="@+id/navigation_more"
+        android:name="com.example.nieruchomosci.ui.notifications.NotificationsFragment"
+        android:label="@string/wi_cej"
         tools:layout="@layout/fragment_notifications" />
 </navigation>

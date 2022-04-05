@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:ignore="MissingDefaultResource"
+    android:background="@drawable/shape_item_settlement"
+    android:padding="8dp">
+
+    <TextView
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/tv_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="STYCZEŃ 2022"
+        android:fontFamily="@font/segoe_ui_bold"/>
+
+    <TextView
+        android:id="@+id/tv_header_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="03-01-2022"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <View
+        android:id="@+id/v_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/default_gray"
+        app:layout_constraintTop_toBottomOf="@id/tv_header"
+        android:layout_marginTop="4dp"/>
+
+    <LinearLayout
+        android:id="@+id/ll_details"
+        app:layout_constraintTop_toBottomOf="@id/v_divider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingStart="4dp"
+            tools:ignore="RtlSymmetry">
+
+            <TextView
+                android:id="@+id/tv_duedate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/termin_p_atno_ci"
+                android:textSize="12sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/tv_balance"
+                android:layout_marginVertical="4dp"/>
+
+            <TextView
+                android:id="@+id/tv_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/saldo"
+                android:textSize="12sp"
+                app:layout_constraintTop_toBottomOf="@id/tv_duedate"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/tv_bill"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:id="@+id/tv_bill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/naliczenie"
+                android:textSize="12sp"
+                app:layout_constraintTop_toBottomOf="@+id/tv_balance"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/tv_payment"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:id="@+id/tv_payment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/wp_ata"
+                android:textSize="12sp"
+                app:layout_constraintTop_toBottomOf="@id/tv_bill"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/tv_topay"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:id="@+id/tv_topay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/do_zap_aty"
+                android:textSize="12sp"
+                app:layout_constraintTop_toBottomOf="@+id/tv_payment"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+            <TextView
+                android:id="@+id/tv_duedate_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="@id/tv_duedate"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="@id/tv_duedate"
+                tools:text="21-01-2022"
+                android:textSize="12sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv_balance_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="@id/tv_balance"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_balance"
+                tools:text="32,24 PLN"
+                android:textSize="12sp"
+                android:textColor="@color/default_green"/>
+
+            <TextView
+                android:id="@+id/tv_bill_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="@+id/tv_bill"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_bill"
+                tools:text="-438,44 PLN"
+                android:textSize="12sp"
+                android:textColor="@color/warning_red"/>
+
+            <TextView
+                android:id="@+id/tv_payment_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="@+id/tv_payment"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_payment"
+                tools:text="0 PLN"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/tv_topay_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="@+id/tv_topay"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_topay"
+                tools:text="-406,20 PLN"
+                android:textSize="12sp"
+                android:textColor="@color/warning_red"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_is_settled"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/status_rozliczenia"
+        app:layout_constraintTop_toBottomOf="@+id/ll_details"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="12sp"
+        android:paddingStart="4dp"
+        android:layout_marginTop="20dp"
+        tools:ignore="RtlSymmetry" />
+
+    <ImageView
+        android:id="@+id/iv_is_settled_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_disabled_by_default_black_24dp"
+        app:layout_constraintStart_toEndOf="@id/tv_is_settled"
+        app:layout_constraintTop_toTopOf="@id/tv_is_settled"
+        app:layout_constraintBottom_toBottomOf="@id/tv_is_settled"
+        android:layout_marginStart="8dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:text="SZCZEGÓŁY"
+        app:layout_constraintTop_toTopOf="@id/iv_is_settled_image"
+        app:layout_constraintBottom_toBottomOf="@id/iv_is_settled_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/shape_blue_button"
+        android:textColor="@color/white"
+        android:paddingHorizontal="8dp"
+        android:paddingVertical="2dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

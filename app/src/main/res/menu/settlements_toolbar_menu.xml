@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_notifications"
+        android:icon="@drawable/ic_notifications_black_24dp"
+        android:orderInCategory="100"
+        android:title="@string/powiadomienia"/>
+
+    <item
+        android:id="@+id/action_messages"
+        android:icon="@drawable/ic_messages"
+        android:orderInCategory="101"
+        android:title="@string/wiadomo_ci"/>
+
+</menu>
