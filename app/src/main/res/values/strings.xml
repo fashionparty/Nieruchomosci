@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Nieruchomosci</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="app_logo">app logo</string>
+    <string name="login">Login</string>
+    <string name="password">Hasło</string>
+    <string name="remember">Zapamiętaj dane logowania</string>
+    <string name="zaloguj">Zaloguj</string>
+    <string name="apator_copyrights">© Apator Rector 2022</string>
+    <string name="remember_validation">Zapamiętaj dane logowania</string>
+</resources>
